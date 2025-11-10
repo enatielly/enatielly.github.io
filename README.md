@@ -14,15 +14,14 @@ Página pessoal profissional de **Enatielly Goes**, Doutora em Oceanografia e ca
 ## 📋 Sobre
 
 Sou pesquisadora apaixonada por ciência e tecnologia, com expertise em:
-- **Oceanografia** - Ph.D. pela Universidade Federal de Uberlândia (2019)
+- **Oceanografia** - Ph.D. pela Universidade Federal de Pernambuco (UFPE)
 - **Ciência da Computação** - Doutoranda no Centro de Informática (CIn) da UFPE
 - **Análise de Dados** e **Modelagem Computacional**
 - **Pesquisa Interdisciplinar** combinando oceanografia e computação
 
 ### 🎓 Formação Acadêmica
 - Ph.D. em Ciência da Computação (em progresso) - UFPE
-- Ph.D. em Oceanografia (2019) - Universidade Federal de Uberlândia
-- Experiência em pesquisa internacional (França, Suécia)
+- Ph.D. em Oceanografia - UFPE
 
 ---
 
