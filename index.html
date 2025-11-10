@@ -20,21 +20,57 @@
                 </div>
             </div>
         </header>
-
-        <main>
             <section class="about">
                 <h2>Welcome!</h2>
                 <p>I am currently pursuing a second Ph.D. in Computer Science at the Centro de Informática (CIn) of the Universidade Federal de Pernambuco (UFPE). My research interests include data analysis, computational modeling, and interdisciplinary studies combining oceanography and computer science.</p>
             </section>
 
-            <section class="contact-links">
+            <!-- Tabs Navigation -->
+            <div class="tabs">
+                <button class="tab-button active" onclick="openTab(event, 'contact')">Get in Touch</button>
+                <button class="tab-button" onclick="openTab(event, 'publications')">Publications</button>
+                <button class="tab-button" onclick="openTab(event, 'projects')">Research Projects</button>
+            </div>
+
+            <!-- Get in Touch Tab -->
+            <section id="contact" class="tab-content active">
                 <h2>Get in Touch</h2>
                 <div class="links-grid">
                     <a href="http://lattes.cnpq.br/5346918577088076" target="_blank" class="link-button">📄 Currículo Lattes</a>
                     <a href="https://github.com/enatielly" target="_blank" class="link-button">💻 GitHub</a>
                     <a href="https://scholar.google.com.br/citations?hl=en&user=WSvxitoAAAAJ" target="_blank" class="link-button">🎓 Google Scholar</a>
                     <a href="https://orcid.org/0000-0001-8229-7722" target="_blank" class="link-button">🔗 ORCID</a>
+                    <a href="https://www.linkedin.com/in/enatielly-goes/" target="_blank" class="link-button">💼 LinkedIn</a>
                     <a href="mailto:enatielly.goes@ufpe.br" class="link-button">✉️ Email</a>
+                </div>
+            </section>
+
+            <!-- Publications Tab -->
+            <section id="publications" class="tab-content">
+                <h2>Publications</h2>
+                <p class="section-intro">Aqui estão minhas publicações científicas. Para uma lista completa, visite meu <a href="http://lattes.cnpq.br/5346918577088076" target="_blank">Currículo Lattes</a> ou <a href="https://scholar.google.com.br/citations?hl=en&user=WSvxitoAAAAJ" target="_blank">Google Scholar</a>.</p>
+                
+                <div class="publications-list">
+                    <div class="publication-item">
+                        <h3>Publicação em Progresso</h3>
+                        <p>Para adicionar suas publicações, edite o arquivo <code>index.html</code> na seção Publications.</p>
+                        <p class="publication-meta">Consulte seu <a href="http://lattes.cnpq.br/5346918577088076" target="_blank">Lattes</a> para copiar suas publicações.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Tab -->
+            <section id="projects" class="tab-content">
+                <h2>Research Projects</h2>
+                <p class="section-intro">Projetos de pesquisa que participei e estou participando.</p>
+                
+                <div class="projects-list">
+                    <div class="project-item">
+                        <h3>Projeto de Pesquisa</h3>
+                        <p><strong>Período:</strong> Em progresso</p>
+                        <p><strong>Descrição:</strong> Para adicionar seus projetos, edite o arquivo <code>index.html</code> na seção Projects.</p>
+                        <p class="project-meta">Consulte seu <a href="http://lattes.cnpq.br/5346918577088076" target="_blank">Lattes</a> para copiar informações dos seus projetos.</p>
+                    </div>
                 </div>
             </section>
         </main>
@@ -43,5 +79,27 @@
             <p>&copy; 2025 Enatielly Goes. All rights reserved.</p>
         </footer>
     </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tabbuttons;
+            
+            // Hide all tab contents
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            
+            // Remove active class from all buttons
+            tabbuttons = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabbuttons.length; i++) {
+                tabbuttons[i].classList.remove("active");
+            }
+            
+            // Show the current tab and mark button as active
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
 </body>
 </html>
