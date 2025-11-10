@@ -3,6 +3,11 @@ body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom, #ffffff, #f0f0f0);
     color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 header {
@@ -10,6 +15,8 @@ header {
     padding: 2rem;
     background-color: #f9f9f9;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    border-radius: 10px;
 }
 
 .profile h1 {
@@ -24,9 +31,16 @@ header {
     color: #666;
 }
 
+.photo {
+    margin-bottom: 1rem;
+}
+
 main {
     padding: 2rem;
     background-color: #ffffff;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .bio, .links {
@@ -53,4 +67,6 @@ footer {
     background-color: #f9f9f9;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
     color: #333;
+    width: 80%;
+    border-radius: 10px;
 }
